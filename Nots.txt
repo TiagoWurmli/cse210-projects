@@ -1,0 +1,66 @@
+-StackOverflow: site pra ajudar como faz as coisas.
+
+!C#!
+-Em C# Usa {} para determinar oq vai dentro, não usa : q nem python
+-Cada comando tem q terminar com ";"(semicolons). So coisas q tem corpo q nao precisam, tipo o if.
+
+!Variaveis!
+-Nome das variaveis é assim "firstName" não "first_name"
+-Em C# as variaveis tem q ser declaradas antes, e não podem ser mudadas depois
+Ex: int x;   ou   int x = 5;
+-MAS da pra mudar o tipo do valor antesde colocar na variavel usando int.Parse(). 
+Ex: 
+Console.Write("What is your favorite number? ");
+string userInput = Console.ReadLine();
+int number = int.Parse(userInput);
+-Pra mudar de int pra string usa .ToString()
+Ex: int number = 42;
+string textVersion = number.ToString();
+
+Variaveis comuns:
+int - Integers (whole numbers, positive and negative)
+string - Strings (a sequence of characters, including letters, numbers, or symbols)
+float - Floating point numbers (numbers that use decimals)
+double - Double precision floating point numbers (just like a float, except it takes up twice as much memory, so it can hold larger numbers or numbers with more decimal places)
+bool - Boolean variables (true or false)
+
+!Print!
+Console.WriteLine("Hello World!"); Vai criar uma nova linha no final
+Console.Write("There will not be a newline after this."); Não vai criar uma nova linha no final
+-Pra printa uma variavel usa $, que nem o f no python
+Ex: Console.WriteLine($"I am studying at {school}.");
+
+!Input!
+Console.ReadLine() Retorna uma string, não importa oq escreverem, sera uma string
+-Não escreve nada, entao tem q printa antes 
+Ex:Console.Write("What is your favorite color? ");
+string color = Console.ReadLine();
+
+!if!
+-A condição tem q ta dentro do ()
+if (x > y)
+{
+  Console.WriteLine("greater");
+}
+-'else' e 'else if' são q nem em python, so que não é elif, é else if
+
+!Operators!
+== 
+!=
+>=
+<=
+
+&& é o and em python
+|| é o or em python
+! é o not em python
+Ex:if (!(name == "Peter" || name == "James" || name == "John"))
+{
+    Console.WriteLine("This is a not one of those three");
+}
+
+
+
+
+
+
+
