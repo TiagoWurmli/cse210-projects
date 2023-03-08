@@ -114,3 +114,22 @@ Ex: for (int i = 0; i < words.Count; i++)
     Console.WriteLine(words[i]);
 }
 
+!Function!
+-Nome tem q começar com letra maiuscula
+-Tem q declarar q tipo de retorno vai dar e dos parametros, string, int ou nada (void)
+Ex: returnType FunctionName(dataType parameter1, dataType parameter2)
+-void
+Ex: void DisplayMessage()
+{
+    Console.WriteLine("Hello world!");
+}
+-static. This tells C# that you want your functions to be able to be called without any other context.
+Ex: static int AddNumbers(int first, int second)
+{
+    int sum = first + second;
+    return sum;
+}
+
+
+
+
