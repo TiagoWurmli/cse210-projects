@@ -49,7 +49,6 @@ if (x > y)
 !=
 >=
 <=
-
 && é o and em python
 || é o or em python
 ! é o not em python
@@ -58,9 +57,34 @@ Ex:if (!(name == "Peter" || name == "James" || name == "John"))
     Console.WriteLine("This is a not one of those three");
 }
 
+!Loops!
+-While: igual ao python
+Ex: string response = "yes";
+while (response == "yes")
+{
+    Console.Write("Do you want to continue? ");
+    response = Console.ReadLine();
+}
+-Do-While: Faz uma vez, dai ve se vai fazer de nv se cumprir as paradas
+Ex: string response;
+do
+{
+    Console.Write("Do you want to continue? ");
+    response = Console.ReadLine();
+} while (response == "yes");
+-For: É como so fosse o "for range" do python. O "i++" quer dizer q vai de um a um, se for "i + 2" vai de 2 em 2
+Ex: for (int i = 0; i < 10; i++)
+{
+    Console.WriteLine(i);
+}                           Vai de 0 a 9
+-Foreach: É tipo o "for" do python
+Ex: foreach (string color in colors)
+{
+    Console.WriteLine(color);
+}
 
-
-
-
-
+!Random!
+Random randomGenerator = new Random();
+int number = randomGenerator.Next(1, 11);
+-Inclui o primeiro numero, mas não o segundo, entao vai de 1 a 10.
 
