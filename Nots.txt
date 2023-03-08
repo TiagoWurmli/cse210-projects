@@ -88,3 +88,29 @@ Random randomGenerator = new Random();
 int number = randomGenerator.Next(1, 11);
 -Inclui o primeiro numero, mas não o segundo, entao vai de 1 a 10.
 
+!List! (Listas)
+-Tem q declarar q é uma lista(e qual tipo de lista), depois criar a lista
+Ex: List<int> numbers = new List<int>();
+List<string> words = new List<string>();   O parenteses no final vem sempre depois q cria algo
+Any file that uses Lists (or any other standard collection), must refer to that library at the top of the file. (This is so common that sometimes your settings for C# can be specified so that you do not not have include this, but it is important to know about it, in case you run into problems.)
+Ex: using System.Collections.Generic;
+-Add(). Adicionar itens na lista
+Ex: using System.Collections.Generic;
+...
+List<string> words = new List<string>();
+words.Add("phone");
+words.Add("keyboard");
+words.Add("mouse");
+-Contar o tamanho da lista usar "Count" 
+Ex: Console.WriteLine(words.Count);
+-The easiest (and safest) way to iterate through a list in C# is to use the foreach loop:
+Ex: foreach (string word in words)
+{
+    Console.WriteLine(word);
+}
+-Index. 
+Ex: for (int i = 0; i < words.Count; i++)
+{
+    Console.WriteLine(words[i]);
+}
+
